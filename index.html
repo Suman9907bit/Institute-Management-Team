@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Institute Team</title>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Logo */
+        .logo {
+            margin: 20px 0;
+        }
+
+        .logo img {
+            height: 90px;
+        }
+
+        h1 {
+            color: #222;
+            margin-bottom: 30px;
+        }
+
+        /* Team */
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .member {
+            background: #ffffff;
+            width: 30%;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .member:hover {
+            transform: translateY(-6px);
+        }
+
+        /* Photo */
+        .photo {
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #0a58ca;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .photo:hover img {
+            transform: scale(1.15);
+        }
+
+        .member h2 {
+            margin: 12px 0 5px;
+            color: #0a58ca;
+        }
+
+        .position {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #444;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Social Icons */
+        .social {
+            margin-top: 12px;
+        }
+
+        .social a {
+            display: inline-block;
+            margin: 0 6px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            border-radius: 50%;
+            background: #0a58ca;
+            color: #fff;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .social a:hover {
+            background: #084298;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #0a58ca;
+            color: #fff;
+            padding: 15px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .member { width: 48%; }
+        }
+
+        @media (max-width: 600px) {
+            .member { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMWBKH-2GigRZ_OYEcaRzOF_2KI-Zpk-ApVth6w=s1360-w1360-h1020-rw"" alt="Institute Logo">
+    </div>
+
+    <h1>Our Institute Management Team</h1>
+
+    <div class="team">
+
+        <!-- Member 1 -->
+        <div class="member">
+            <div class="photo">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOeueaKyx6nHV85mNe3oXLXmnoZl3UfsVo5tMjY=s1360-w1360-h1020-rw" alt="Suman Jana">
+            </div>
+            <h2>Mr. Suman Jana</h2>
+            <div class="position">Managing Director</div>
+            <div class="description">
+                Mr. Suman Jana is the Managing Director of our institute and the backbone
+                of overall administration and planning.
+            </div>
+            <div class="social">
+                <a href="tel:9907992247"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/919907992247"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:info@example.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="member">
+            <div class="photo">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPoF5nTtcDzdk6WCcwRvTWGEkVF1ExGLot0Pq4R=s1360-w1360-h1020-rw" alt="Avijit Paik">
+            </div>
+            <h2>Mr. Avijit Paik</h2>
+            <div class="position">Theory Trainer</div>
+            <div class="description">
+                Mr. Avijit Paik explains computer fundamentals and theory concepts
+                clearly for strong academic understanding.
+            </div>
+            <div class="social">
+                <a href="tel:7699050769"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/917699050769"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="member">
+            <div class="photo">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPDB9kJYneRuCKZlHryYu8B-Ja5476zwdZBoBjU=s1360-w1360-h1020-rw" alt="Abhijit Metya">
+            </div>
+            <h2>Mr. Abhijit Metya</h2>
+            <div class="position">Practical Trainer</div>
+            <div class="description">
+                Mr. Abhijit Metya focuses on hands-on training and real-time
+                practical skills development.
+            </div>
+            <div class="social">
+                <a href="tel:97335 82208"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/9197335 82208"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 <b>Your Institute Name</b> | All Rights Reserved
+</footer>
+
+</body>
+</html>
