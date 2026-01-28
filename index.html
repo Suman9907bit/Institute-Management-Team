@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>Our Institute Team</title>
 
-    <!-- Font Awesome for Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
+        *{
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background: white;
@@ -15,7 +19,8 @@
         }
 
         .container {
-            width: 90%;
+            width: 92%;
+            max-width: 1200px;
             margin: auto;
             text-align: center;
         }
@@ -27,6 +32,7 @@
 
         .logo img {
             height: 90px;
+            max-width: 100%;
         }
 
         h1 {
@@ -38,14 +44,14 @@
         .team {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 20px;
         }
 
         .member {
             background: #ffffff;
-            width: 30%;
+            width: 32%;
             padding: 20px;
-            margin-bottom: 20px;
             border-radius: 14px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             transition: 0.3s;
@@ -133,6 +139,7 @@
 
         @media (max-width: 600px) {
             .member { width: 100%; }
+            h1 { font-size: 22px; }
         }
     </style>
 </head>
@@ -142,7 +149,7 @@
 
     <!-- Logo -->
     <div class="logo">
-        <img src="https://lh3.googleusercontent.com/p/AF1QipMWBKH-2GigRZ_OYEcaRzOF_2KI-Zpk-ApVth6w=s1360-w1360-h1020-rw"" alt="Institute Logo">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMWBKH-2GigRZ_OYEcaRzOF_2KI-Zpk-ApVth6w=s1360-w1360-h1020-rw" alt="Institute Logo">
     </div>
 
     <h1>Our Institute Management Team</h1>
@@ -152,7 +159,7 @@
         <!-- Member 1 -->
         <div class="member">
             <div class="photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipOeueaKyx6nHV85mNe3oXLXmnoZl3UfsVo5tMjY=s1360-w1360-h1020-rw" alt="Suman Jana">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMX4jSjdGIDIkJTUGm1t5OLNGopZHgFcU6d0X6U=s1360-w1360-h1020-rw">
             </div>
             <h2>Mr. Suman Jana</h2>
             <div class="position">Managing Director</div>
@@ -170,7 +177,7 @@
         <!-- Member 2 -->
         <div class="member">
             <div class="photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipPoF5nTtcDzdk6WCcwRvTWGEkVF1ExGLot0Pq4R=s1360-w1360-h1020-rw" alt="Avijit Paik">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPoF5nTtcDzdk6WCcwRvTWGEkVF1ExGLot0Pq4R=s1360-w1360-h1020-rw">
             </div>
             <h2>Mr. Avijit Paik</h2>
             <div class="position">Theory Trainer</div>
@@ -188,7 +195,7 @@
         <!-- Member 3 -->
         <div class="member">
             <div class="photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipPDB9kJYneRuCKZlHryYu8B-Ja5476zwdZBoBjU=s1360-w1360-h1020-rw" alt="Abhijit Metya">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMj-Vd0UH_mOeVNmgz5cRpZVb-dxEh_CxegO0xG=s1360-w1360-h1020-rw">
             </div>
             <h2>Mr. Abhijit Metya</h2>
             <div class="position">Practical Trainer</div>
@@ -197,8 +204,8 @@
                 practical skills development.
             </div>
             <div class="social">
-                <a href="tel:97335 82208"><i class="fa-solid fa-phone"></i></a>
-                <a href="https://wa.me/9197335 82208"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:9733582208"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/919733582208"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="#"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
