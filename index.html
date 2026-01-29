@@ -1,153 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Our Institute Team</title>
+<meta charset="UTF-8">
+<title>Our Institute Team</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <style>
-        *{
-            box-sizing: border-box;
-        }
+<style>
+*{
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: white;
-            margin: 0;
-        }
+body{
+    font-family: Arial, sans-serif;
+    background: #fff;
+    margin: 0;
+}
 
-        .container {
-            width: 92%;
-            max-width: 1200px;
-            margin: auto;
-            text-align: center;
-        }
+.container{
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
 
-        /* Logo */
-        .logo {
-            margin: 20px 0;
-        }
+/* Logo */
+.logo{
+    margin: 20px 0;
+}
+.logo img{
+    height: 90px;
+    max-width: 100%;
+}
 
-        .logo img {
-            height: 90px;
-            max-width: 100%;
-        }
+h1{
+    color: #222;
+    margin-bottom: 30px;
+}
 
-        h1 {
-            color: #222;
-            margin-bottom: 30px;
-        }
+/* Team Layout */
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-        /* Team */
-        .team {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+/* Card */
+.member{
+    background: #fff;
+    width: 32%;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.member:hover{
+    transform: translateY(-6px);
+}
 
-        .member {
-            background: #ffffff;
-            width: 32%;
-            padding: 20px;
-            border-radius: 14px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
+/* Photo */
+.photo{
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #0a58ca;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.photo:hover img{
+    transform: scale(1.15);
+}
 
-        .member:hover {
-            transform: translateY(-6px);
-        }
+.member h2{
+    margin: 12px 0 5px;
+    color: #0a58ca;
+}
+.position{
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+.description{
+    color: #444;
+    font-size: 14px;
+    line-height: 1.6;
+}
 
-        /* Photo */
-        .photo {
-            width: 120px;
-            height: 120px;
-            margin: auto;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid #0a58ca;
-        }
+/* Social */
+.social{
+    margin-top: 12px;
+}
+.social a{
+    display: inline-block;
+    margin: 0 6px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    background: #0a58ca;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.social a:hover{
+    background: #084298;
+    transform: scale(1.1);
+}
 
-        .photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 0.4s;
-        }
+/* Footer */
+footer{
+    background: #0a58ca;
+    color: #fff;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+}
 
-        .photo:hover img {
-            transform: scale(1.15);
-        }
+/* Tablet */
+@media (max-width: 900px){
+    .member{
+        width: 48%;
+    }
+}
 
-        .member h2 {
-            margin: 12px 0 5px;
-            color: #0a58ca;
-        }
+/* Mobile - SINGLE COLUMN */
+@media (max-width: 600px){
+    .member{
+        width: 100%;
+    }
 
-        .position {
-            font-weight: bold;
-            color: #555;
-            margin-bottom: 10px;
-        }
+    h1{
+        font-size: 22px;
+    }
 
-        .description {
-            color: #444;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        /* Social Icons */
-        .social {
-            margin-top: 12px;
-        }
-
-        .social a {
-            display: inline-block;
-            margin: 0 6px;
-            width: 36px;
-            height: 36px;
-            line-height: 36px;
-            border-radius: 50%;
-            background: #0a58ca;
-            color: #fff;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-
-        .social a:hover {
-            background: #084298;
-            transform: scale(1.1);
-        }
-
-        /* Footer */
-        footer {
-            background: #0a58ca;
-            color: #fff;
-            padding: 15px;
-            margin-top: 30px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        /* Responsive */
-        @media (max-width: 900px) {
-            .member { width: 48%; }
-        }
-
-        @media (max-width: 600px) {
-            .member { width: 100%; }
-            h1 { font-size: 22px; }
-        }
-    </style>
+    .description{
+        font-size: 13px;
+    }
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
 
-    <!-- Logo -->
     <div class="logo">
         <img src="https://lh3.googleusercontent.com/p/AF1QipMWBKH-2GigRZ_OYEcaRzOF_2KI-Zpk-ApVth6w=s1360-w1360-h1020-rw" alt="Institute Logo">
     </div>
@@ -159,7 +164,7 @@
         <!-- Member 1 -->
         <div class="member">
             <div class="photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipMX4jSjdGIDIkJTUGm1t5OLNGopZHgFcU6d0X6U=s1360-w1360-h1020-rw">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOeueaKyx6nHV85mNe3oXLXmnoZl3UfsVo5tMjY=s1360-w1360-h1020-rw">
             </div>
             <h2>Mr. Suman Jana</h2>
             <div class="position">Managing Director</div>
@@ -195,7 +200,7 @@
         <!-- Member 3 -->
         <div class="member">
             <div class="photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipMj-Vd0UH_mOeVNmgz5cRpZVb-dxEh_CxegO0xG=s1360-w1360-h1020-rw">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPDB9kJYneRuCKZlHryYu8B-Ja5476zwdZBoBjU=s1360-w1360-h1020-rw">
             </div>
             <h2>Mr. Abhijit Metya</h2>
             <div class="position">Practical Trainer</div>
@@ -214,7 +219,7 @@
 </div>
 
 <footer>
-    © 2026 <b>Your Institute Name</b> | All Rights Reserved
+© 2026 <b>Your Institute Name</b> | All Rights Reserved
 </footer>
 
 </body>
