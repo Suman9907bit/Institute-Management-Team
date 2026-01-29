@@ -2,127 +2,124 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Institute Team</title>
+<title>Our Institute Team</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 *{
+    box-sizing:border-box;
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
 
 body{
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background:#ffffff;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:900px;
     margin:auto;
-    padding:30px 16px;
+    padding:30px 15px;
+}
+
+.header{
     text-align:center;
+    margin-bottom:30px;
 }
 
-.logo img{
-    height:85px;
-    margin-bottom:15px;
+.header img{
+    height:80px;
+    margin-bottom:10px;
 }
 
-h1{
-    font-size:26px;
-    margin-bottom:35px;
+.header h1{
+    font-size:24px;
     color:#111;
 }
 
-/* GRID SYSTEM */
-.team-grid{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap:25px;
+/* LIST STYLE */
+.team-member{
+    display:flex;
+    gap:18px;
+    padding:20px 0;
+    border-bottom:1px solid #e5e5e5;
 }
 
-/* CARD */
-.team-card{
-    background:#fff;
-    border-radius:16px;
-    padding:25px 20px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
-    transition:0.3s;
-}
-
-.team-card:hover{
-    transform:translateY(-6px);
+.team-member:last-child{
+    border-bottom:none;
 }
 
 /* PHOTO */
-.team-photo{
-    width:120px;
-    height:120px;
-    margin:0 auto 15px;
+.tm-photo{
+    width:90px;
+    height:90px;
     border-radius:50%;
     overflow:hidden;
-    border:4px solid #0a58ca;
+    border:3px solid #0a58ca;
+    flex-shrink:0;
 }
 
-.team-photo img{
+.tm-photo img{
     width:100%;
     height:100%;
     object-fit:cover;
 }
 
-/* TEXT */
-.team-card h2{
+/* INFO */
+.tm-info h2{
     font-size:18px;
     color:#0a58ca;
-    margin-bottom:4px;
+    margin-bottom:3px;
 }
 
-.role{
+.tm-role{
     font-size:14px;
-    font-weight:600;
+    font-weight:bold;
     color:#666;
-    margin-bottom:10px;
+    margin-bottom:6px;
 }
 
-.desc{
+.tm-desc{
     font-size:14px;
-    line-height:1.6;
-    color:#444;
+    line-height:1.5;
+    margin-bottom:8px;
 }
 
 /* ICONS */
-.icons{
-    margin-top:15px;
-}
-
-.icons a{
-    display:inline-flex;
-    justify-content:center;
-    align-items:center;
-    width:36px;
-    height:36px;
-    margin:0 5px;
-    border-radius:50%;
-    background:#0a58ca;
-    color:#fff;
+.tm-icons a{
+    color:#0a58ca;
+    font-size:16px;
+    margin-right:12px;
     text-decoration:none;
-    font-size:15px;
-    transition:0.3s;
 }
 
-.icons a:hover{
-    background:#083e9e;
+.tm-icons a:hover{
+    color:#083e9e;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .team-member{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .tm-icons a{
+        margin:0 8px;
+    }
 }
 
 /* FOOTER */
 footer{
-    margin-top:40px;
-    padding:15px;
+    margin-top:35px;
+    padding:12px;
     background:#0a58ca;
     color:#fff;
+    text-align:center;
     font-size:14px;
 }
 </style>
@@ -132,69 +129,71 @@ footer{
 
 <div class="container">
 
-    <div class="logo">
+    <div class="header">
         <img src="https://lh3.googleusercontent.com/p/AF1QipMWBKH-2GigRZ_OYEcaRzOF_2KI-Zpk-ApVth6w=s1360-w1360-h1020-rw">
+        <h1>Our Institute Management Team</h1>
     </div>
 
-    <h1>Our Institute Management Team</h1>
-
-    <div class="team-grid">
-
-        <!-- Card 1 -->
-        <div class="team-card">
-            <div class="team-photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipOeueaKyx6nHV85mNe3oXLXmnoZl3UfsVo5tMjY=s1360-w1360-h1020-rw">
-            </div>
+    <!-- MEMBER 1 -->
+    <div class="team-member">
+        <div class="tm-photo">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOeueaKyx6nHV85mNe3oXLXmnoZl3UfsVo5tMjY=s1360-w1360-h1020-rw">
+        </div>
+        <div class="tm-info">
             <h2>Mr. Suman Jana</h2>
-            <div class="role">Managing Director</div>
-            <p class="desc">
+            <div class="tm-role">Managing Director</div>
+            <div class="tm-desc">
                 Mr. Suman Jana is the Managing Director of our institute and the backbone
                 of overall administration and planning.
-            </p>
-            <div class="icons">
+            </div>
+            <div class="tm-icons">
                 <a href="tel:9907992247"><i class="fa-solid fa-phone"></i></a>
                 <a href="https://wa.me/919907992247"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="mailto:info@example.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
+    </div>
 
-        <!-- Card 2 -->
-        <div class="team-card">
-            <div class="team-photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipPoF5nTtcDzdk6WCcwRvTWGEkVF1ExGLot0Pq4R=s1360-w1360-h1020-rw">
-            </div>
+    <!-- MEMBER 2 -->
+    <div class="team-member">
+        <div class="tm-photo">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPoF5nTtcDzdk6WCcwRvTWGEkVF1ExGLot0Pq4R=s1360-w1360-h1020-rw">
+        </div>
+        <div class="tm-info">
             <h2>Mr. Avijit Paik</h2>
-            <div class="role">Theory Trainer</div>
-            <p class="desc">
+            <div class="tm-role">Theory Trainer</div>
+            <div class="tm-desc">
                 Mr. Avijit Paik explains computer fundamentals and theory concepts
                 clearly for strong academic understanding.
-            </p>
-            <div class="icons">
+            </div>
+            <div class="tm-icons">
                 <a href="tel:7699050769"><i class="fa-solid fa-phone"></i></a>
                 <a href="https://wa.me/917699050769"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="#"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
+    </div>
 
-        <!-- Card 3 -->
-        <div class="team-card">
-            <div class="team-photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipPDB9kJYneRuCKZlHryYu8B-Ja5476zwdZBoBjU=s1360-w1360-h1020-rw">
-            </div>
+    <!-- MEMBER 3 -->
+    <div class="team-member">
+        <div class="tm-photo">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPDB9kJYneRuCKZlHryYu8B-Ja5476zwdZBoBjU=s1360-w1360-h1020-rw">
+        </div>
+        <div class="tm-info">
             <h2>Mr. Abhijit Metya</h2>
-            <div class="role">Practical Trainer</div>
-            <p class="desc">
+            <div class="tm-role">Practical Trainer</div>
+            <div class="tm-desc">
                 Mr. Abhijit Metya focuses on hands-on training and real-time
                 practical skills development.
-            </p>
-            <div class="icons">
+            </div>
+            <div class="tm-icons">
                 <a href="tel:9733582208"><i class="fa-solid fa-phone"></i></a>
                 <a href="https://wa.me/919733582208"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="#"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
-
     </div>
+
 </div>
 
 <footer>
